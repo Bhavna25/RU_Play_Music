@@ -1,0 +1,50 @@
+.library {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    background: var(--main-color-background);
+    background-attachment: fixed;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.16);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.25s ease-out, opacity 0.25s linear;
+    margin-bottom: 3rem;
+    overflow: scroll;
+}
+
+.inputContainer {
+    width: 100%;
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.input {
+    font-size: 1rem;
+    color: var(--main-color-font);
+    background: transparent;
+    border-bottom: 1px solid var(--main-color-font);
+    width: 100%;
+    line-height: 2;
+}
+
+.library h2 {
+    padding: 3rem 2rem;
+}
+
+.noResults {
+    padding: 1rem 2rem;
+}
+
+.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    .library {
+        background-size: 250%;
+    }
+
+}
